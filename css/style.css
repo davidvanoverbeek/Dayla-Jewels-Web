@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera {
+    background-color: rgb(247, 219, 200);
+    font-family: 'Century Gothic',sans-serif;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#logo {
+    width: 5em;
+}
+
+.boton-menu {
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+    transform: scale(1.1);
+}
+
+.menu-principal {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+    background:rgb(222, 105, 27);
+    color: #000;
+}
+
+#caja {
+    display: flex;
+    align-items: center;
+}
+
+#foto {
+    float: right;
+    width: 15%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.descripcion {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+}
+
+#foto {
+    width: 55%;
+    border: 1px #000;
+    image-rendering: optimizeQuality;
+    image-orientation:from-image;
+}
+
+.leyenda1{
+    background-color: rgb(201, 93, 21);
+    border: 1px solid rgb(11, 11, 11);
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 1em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.leyenda2{
+    background-color: rgb(247, 219, 200);
+    border: 1px solid rgb(4, 4, 4);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(222, 105, 27);
+    font-size: 30px;
+    padding: 1em;
+    padding-bottom: 1em;
+    text-shadow: 2px 2px 8px #949090;
+}
+
+.tabla {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.caja-catalogo {
+    width: 300px;
+    margin-right: 10%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caja-catalogo img {
+    width: 100%;
+    display: block;
+}
+
+.caja-catalogo a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#imagenes {
+    background-color: rgb(69, 65, 65);
+}
+
+div a .contactos {
+    width: 8%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+.footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(201, 93, 21);
+    color: white;
+    text-align: right;
+}
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    z-index: 1000;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: rgb(201, 93, 21);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-popup a{
+    color: rgb(201, 93, 21);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+    
+.boton-menu {
+    display: block;
+}
+
+.menu-principal {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    background-color: grey;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.menu-principal.menu-desplegado {
+    display: flex;
+}
+
+.menu-principal a {
+    padding: 10px 12px;
+    font-size: 17px;
+}
+
+.descripcion {
+    font-size: 15px;
+}
+
+#descrip1 {
+    font-size: 15px;
+}
+
+#descrip2 {
+    font-size: 15px;
+}
+
+#descrip3 {
+    font-size: 15px;
+}
+
+div .cv{
+    font-size: 15px;
+}
+
+.leyenda{
+    font-size: 25px;
+}
+}
