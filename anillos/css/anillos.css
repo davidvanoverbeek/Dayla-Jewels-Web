@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 7em;
+}
+
+.cabecera {
+    background-color: rgb(201, 93, 21);
+    font-family: 'Century Gothic',sans-serif;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.boton-menu {
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+    transform: scale(1.1);
+}
+
+.menu-principal {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+    background:rgb(231, 213, 202);
+    color: #000;
+}
+
+
+.leyenda1{
+    background-color: rgb(201, 93, 21);
+    border: 1px solid rgb(11, 11, 11);
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 1em;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.leyenda2{
+    background-color: rgb(247, 219, 200);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(222, 105, 27);
+    font-size: 30px;
+    padding: 1em;
+    padding-bottom: 1em;
+    text-shadow: 2px 2px 8px #949090;
+}
+
+.titulitos {
+    padding: 1em;
+}
+
+.lista-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.catalogo {
+    background: white;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.catalogo img {
+    width: 200px;
+    height: 200px;
+}
+
+.catalogo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.productos {
+    padding: 20px;
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.4em;
+}
+
+.productos p.long {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.catalogo.active {
+    width: 500px;
+    transform: scale(1.05);
+}
+
+.catalogo.active p.long {
+    max-height: 500px;
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    
+.boton-menu {
+    display: block;
+}
+
+.menu-principal {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    background-color: rgb(129, 60, 14);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.menu-principal.menu-desplegado {
+    display: flex;
+}
+
+.menu-principal a {
+    padding: 10px 12px;
+    font-size: 17px;
+}
+
+.descripcion {
+    font-size: 15px;
+}
+.leyenda1{
+    font-size: 25px;
+}
+
+.leyenda2{
+    font-size: 25px;
+}
+}

@@ -14,7 +14,7 @@
 }
 
 #logo {
-    width: 5em;
+    width: 7em;
 }
 
 .boton-menu {
@@ -119,6 +119,8 @@
 .caja-catalogo img {
     width: 100%;
     display: block;
+    image-rendering: optimizeQuality;
+    image-orientation:from-image;
 }
 
 .caja-catalogo a{
@@ -127,14 +129,30 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#imagenes {
-    background-color: rgb(69, 65, 65);
+div#contactos {
+    display: flex;
 }
 
-div a .contactos {
-    width: 8%;
-    margin-right: 20%;
-    margin-top: 2%;
+#contactos iframe {
+    padding-top: 10px;
+}
+
+#imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    margin-top: 9%;
+    margin-left: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+    margin-top: 10%;
+    margin-left: 3%;
 }
 
 .footer {
@@ -189,7 +207,7 @@ div a .contactos {
     flex-direction: column;
     gap: 12px;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(129, 60, 14);
     position: absolute;
     top: 100%;
     right: 0;
@@ -209,22 +227,6 @@ div a .contactos {
 }
 
 .descripcion {
-    font-size: 15px;
-}
-
-#descrip1 {
-    font-size: 15px;
-}
-
-#descrip2 {
-    font-size: 15px;
-}
-
-#descrip3 {
-    font-size: 15px;
-}
-
-div .cv{
     font-size: 15px;
 }
 
