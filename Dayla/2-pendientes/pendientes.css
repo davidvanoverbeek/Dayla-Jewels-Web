@@ -3,18 +3,49 @@
     padding: 0;
 }
 
-#logo {
-    width: 7em;
+header {
+    background-color: #F1ECE6;
+    font-family: 'Century Gothic',sans-serif;
+    padding: 20px 50px;
+    position: sticky;
+    border: 1px solid rgb(4, 4, 4);
+    top: 0;
+    z-index: 100;
 }
 
-.cabecera {
-    background-color: rgb(247, 219, 200);
-    font-family: 'Century Gothic',sans-serif;
-    padding: 10px 10px;
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    margin: auto;
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin-left: auto;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #1E1E1E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C86A2B;
 }
 
 .boton-menu {
@@ -30,44 +61,21 @@
     transform: scale(1.1);
 }
 
-.menu-principal {
-    display: flex;
-    gap: 24px;
-}
-
-.menu-principal a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    padding: 10px 14px;
-    border-radius: 10px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.menu-principal a:hover {
-    background:rgb(201, 93, 21);
-    color: #000;
-}
-
-
 .leyenda1{
-    background-color: rgb(201, 93, 21);
-    border: 1px solid rgb(11, 11, 11);
+    background-color: #C86A2B;
     font-family: 'Courier New', Courier, monospace;
-    color: whitesmoke;
+    color: #F1ECE6;
     font-size: 30px;
     padding: 1em;
-    text-shadow: 2px 2px 8px #000;
 }
 
 .leyenda2{
-    background-color: rgb(159, 154, 154);
+    background-color: #C86A2B;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(242, 147, 53);
+    color: #1E1E1E;
     font-size: 30px;
     padding: 1em;
     padding-bottom: 1em;
-    text-shadow: 2px 2px 8px #454343;
 }
 
 .titulitos {
