@@ -63,20 +63,38 @@ nav ul li a:hover {
 
 .leyenda1{
     background-color: #C86A2B;
-    font-family: 'Courier New', Courier, monospace;
     color: #F1ECE6;
     font-size: 30px;
     padding: 1em;
 }
 
-.leyenda2{
-    background-color: #C86A2B;
-    font-family: 'Courier New', Courier, monospace;
-    color: #1E1E1E;
-    font-size: 30px;
-    padding: 1em;
-    padding-bottom: 1em;
+.jewelry-bg {
+  background-color: #FAF8F5;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 29px,
+      rgba(201, 184, 154, 0.25) 29px,
+      rgba(201, 184, 154, 0.25) 30px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 29px,
+      rgba(201, 184, 154, 0.25) 29px,
+      rgba(201, 184, 154, 0.25) 30px
+    ),
+    radial-gradient(circle, rgba(184, 160, 128, 0.4) 0.8px, transparent 0.8px);
+  background-size: 60px 60px, 60px 60px, 30px 30px;
+  border-top: 0.8px solid rgba(201, 184, 154, 0.5);
+  border-bottom: 0.8px solid rgba(201, 184, 154, 0.5);
+  padding-bottom: 1em;
+  padding: 1em;
+  font-size: 30px;
+  color: #C86A2B;
 }
+
 
 .titulitos {
     padding: 1em;
@@ -169,6 +187,42 @@ nav ul li a:hover {
     height: 220;
 }
 
+.tarjeta{
+    cursor: pointer;
+    transition: all .35s ease;
+}
+
+.info-extra{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.tarjeta.activa .info-extra{
+    max-height: 200px;
+    opacity: 1;
+}
+
+.tarjeta:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.tarjeta.activa{
+    background:#fff;
+    border-radius:12px;
+    padding-bottom:15px;
+}
+
+.footer {
+    background-color: #C86A2B;
+    color: white;
+    text-align: right;
+}
+
 @media screen and (max-width:700px) {
     
 .boton-menu {
@@ -203,7 +257,7 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
-.leyenda2{
+.jewelry-bg{
     font-size: 25px;
 }
 }

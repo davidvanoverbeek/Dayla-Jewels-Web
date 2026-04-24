@@ -73,9 +73,21 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+.banner {
+    background-image: url(img/Banner-dayla.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 30px;
+    padding: 1em;
+    color: #020202;
+}
+
 #caja {
     display: flex;
     align-items: center;
+    margin-right: 2em
 }
 
 #foto {
@@ -106,20 +118,6 @@ nav ul li a:hover {
     border: 1px #000;
     image-rendering: optimizeQuality;
     image-orientation:from-image;
-}
-
-.leyenda1{
-    background-color: #C86A2B;
-    color: #F1ECE6;
-    font-size: 30px;
-    padding: 1em;
-}
-
-.leyenda2{
-    background-color: #F1ECE6;
-    color: #C86A2B;
-    font-size: 30px;
-    padding: 1em;
 }
 
 .tabla {
@@ -186,12 +184,21 @@ div #contactos {
     padding-top: 10px;
 }
 
+#enlaces {
+    margin-left: 5em;
+    display: -ms-grid;
+    align-content: center;    
+}
+
 #mobile {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 30px;
     margin-top: 9%;
     margin-left: 10%;
+    white-space: nowrap;
+    font-size: 20px;
 }
 
 #mobile img {
@@ -202,9 +209,12 @@ div #contactos {
 #mail {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
     gap: 30px;
     margin-top: 9%;
     margin-left: 10%;
+    font-size: 20px;
 }
 
 #mail img {
@@ -213,9 +223,10 @@ div #contactos {
 }
 
 .footer {
-    background-color: rgb(201, 93, 21);
+    background-color: #C86A2B;
     color: white;
     text-align: right;
+    font-size: 15px;
 }
 
 .cookie-popup{
