@@ -102,11 +102,13 @@ nav ul li a:hover {
 .catalogo img {
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    transition: tramsfrom 0.5s ease;
 }
 
 .catalogo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .productos {
