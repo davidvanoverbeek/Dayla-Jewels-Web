@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="icon" rel="icon" href="img/Dayla Jewels.ico">
-    <link rel="stylesheet" href="colgantes.css">
+    <link rel="stylesheet" href="../catalogo.css">
+
     <title>Colgantes</title>
+    
 </head>
 
 <body>
+    <!-- Cabecera y menu-->
     <header>
         <nav>
             <a href="../index.html#inicio"><img id="logo" src="img/Logo Dayla sin fondo-Photoroom.png"></a>
@@ -23,34 +26,47 @@
     </header>
 
     <main>
-        <section id="circonitas" class="leyenda1">
-            <h3 class="titulitos">Colgantes de Circonitas - Diamantes</h3>
+        <!-- Seccion de cada producto, donde apareceran las cartas divididas segun tipo -->
+        <section id="circonitas" class="fondo">
+            <h3 class="secciones">Colgantes de Circonitas - Diamantes</h3>
             <div class="lista-catalogo" id="catalogo-circonitas"></div>
         </section>
 
-        <section id="colores" class="jewelry-bg">
-            <h3 class="titulitos">Colgantes de Colores</h3>
+        <section id="colores" class="fondo">
+            <h3 class="secciones">Colgantes de Colores</h3>
             <div class="lista-catalogo" id="catalogo-colores"></div>
         </section>
 
-        <section id="bicolor" class="leyenda1">
-            <h3 class="titulitos">Colgantes Bicolor</h3>
+        <section id="bicolor" class="fondo">
+            <h3 class="secciones">Colgantes Bicolor</h3>
             <div class="lista-catalogo" id="catalogo-bicolor"></div>
         </section>
 
-        <section id="esmalte" class="jewelry-bg">
-            <h3 class="titulitos">Colgantes Esmalte</h3>
+        <section id="esmalte" class="fondo">
+            <h3 class="secciones">Colgantes Esmalte</h3>
             <div class="lista-catalogo" id="catalogo-esmalte"></div>
         </section>
     </main>
 
-    <footer class="footer">
+    <!-- Desplegable Productos -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">✕</button>
+            <img id="modal-img" src="">
+            <h2 id="modal-ref"></h2>
+            <div id="modal-info"></div>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer class="fondo">
         <h6>David Antonio van Overbeek Crusells - 2026</h6>
     </footer>
-
-    <script src="js/desplegable-colgantes.js"></script>
-    <script src="js/menu_responsive-colgantes.js"></script>
-    <script src="data-colgantes.js"></script>
-    <script src="catalogos-colgantes.js"></script>
+    
+    <!-- Enlaces con los JS -->
+    <script src="data-colgantes.js" loading="lazy"></script>
+    <script src="../modal.js"></script>
+    <script src="../catalogos.js"></script>
+    <script src="../menu-responsive.js"></script>
 </body>
 </html>

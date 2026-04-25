@@ -17,8 +17,8 @@ function pintarSeccion(idContenedor, arrayProductos) {
 }
 
 window.onload = () => {
-  pintarSeccion("catalogo-circonitas", ANILLOS.circonitas);
-  pintarSeccion("catalogo-colores", ANILLOS.colores);
-  pintarSeccion("catalogo-bicolor", ANILLOS.bicolor);
-  pintarSeccion("catalogo-esmalte", ANILLOS.esmalte);
+  pintarSeccion("catalogo-circonitas", DATA.circonitas);
+  pintarSeccion("catalogo-colores", DATA.colores);
+  pintarSeccion("catalogo-bicolor", DATA.bicolor);
+  pintarSeccion("catalogo-esmalte", DATA.esmalte);
 };

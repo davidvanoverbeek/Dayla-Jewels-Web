@@ -250,7 +250,7 @@ div #contactos {
 }
 
 .cookie-popup button{
-    background-color: rgb(201, 93, 21);
+    background-color: #F1ECE6;
     color: #fff;
     border: none;
     padding: 8px 14px;
@@ -259,7 +259,7 @@ div #contactos {
 }
 
 .cookie-popup a{
-    color: rgb(201, 93, 21);
+    color: #F1ECE6;
     text-decoration: underline;
 }
 
@@ -274,7 +274,7 @@ div #contactos {
     flex-direction: column;
     gap: 12px;
     text-align: center;
-    background-color: rgb(129, 60, 14);
+    background-color: #F1ECE6;
     position: absolute;
     top: 100%;
     right: 0;
@@ -297,7 +297,7 @@ div #contactos {
     font-size: 15px;
 }
 
-.leyenda{
+.banner{
     font-size: 25px;
 }
 
