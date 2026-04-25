@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="icon" rel="icon" href="img/Dayla-Jewels.webp">
-    <link rel="stylesheet" href="anillos.css">
+    <link rel="stylesheet" href="../catalogo.css">
+    
     <title>Anillos</title>
+
 </head>
 
-<main>
+<body>
+    <!-- Cabecera y menu-->
     <header>
         <nav>
             <a href="../index.html#inicio"><img id="logo" src="img/Logo-Dayla-sin-fondo-Photoroom.webp"></a>
@@ -23,34 +26,46 @@
     </header>
 
     <main>
-        <section id="circonitas" class="leyenda1">
-            <h3 class="titulitos">Anillos de Circonitas - Diamantes</h3>
+        <!-- Seccion de cada producto, donde apareceran las cartas divididas segun tipo -->
+        <section id="circonitas" class="fondo">
+            <h3 class="secciones">Anillos de Circonitas - Diamantes</h3>
             <div class="lista-catalogo" id="catalogo-circonitas"></div>
         </section>
 
-        <section id="colores" class="jewelry-bg">
-            <h3 class="titulitos">Anillos de Colores</h3>
+        <section id="colores" class="fondo">
+            <h3 class="secciones">Anillos de Colores</h3>
             <div class="lista-catalogo" id="catalogo-colores"></div>
         </section>
 
-        <section id="bicolor" class="leyenda1">
-            <h3 class="titulitos">Anillos Bicolor</h3>
+        <section id="bicolor" class="fondo">
+            <h3 class="secciones">Anillos Bicolor</h3>
             <div class="lista-catalogo" id="catalogo-bicolor"></div>
         </section>
 
-        <section id="esmalte" class="jewelry-bg">
-            <h3 class="titulitos">Anillos Esmalte</h3>
+        <section id="esmalte" class="fondo">
+            <h3 class="secciones">Anillos Esmalte</h3>
             <div class="lista-catalogo" id="catalogo-esmalte"></div>
         </section>
     </main>
+    <!-- Desplegable Productos -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">✕</button>
+            <img id="modal-img" src="">
+            <h2 id="modal-ref"></h2>
+            <div id="modal-info"></div>
+        </div>
+    </div>
 
-    <footer class="footer">
+    <!-- Pie de pagina -->
+    <footer class="fondo">
         <h6>David Antonio van Overbeek Crusells - 2026</h6>
     </footer>
 
-    <script src="desplegable-anillos.js"></script>
-    <script src="menu_responsive-anillos.js"></script>
-    <script src="data-anillos.js"></script>
+    <!-- Enlaces con los JS -->
+    <script src="data-anillos.js" loading="lazy"></script>
+    <script src="../modal.js"></script>
     <script src="catalogos-anillos.js"></script>
+    <script src="../menu-responsive.js"></script>
 </body>
 </html>

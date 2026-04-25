@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* - ESTILO DE LA CABECERA Y MENU - */
+header {
+    font-family: 'Century Gothic',sans-serif;
+    position: sticky;
+    background: #F1ECE6;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border: none;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding: 0.2em
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+
+}
+
+nav ul li{
+    padding-left: 25px;
+}
+
+nav ul li a {
+    color: #1E1E1E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C86A2B;
+}
+
+.boton-menu {
+    font-size: 28px;
+    color: #000000;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+    transform: scale(1.1);
+}
+
+/* - ESTILOS DE LOS DIV - */
+.fondo {
+    background-image: url(img/Fondo.webp);
+    background-position: stiky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* - Estilo para la Cards de Anillos */
+.secciones {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #2B2B2B;
+    padding: 1em;
+}
+
+.lista-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0 20px
+}
+
+/* - Enlace con el JS (Desplegable-anillos) */
+.catalogo {
+    background: #FFFFFFCC;
+    width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.catalogo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.productos {
+    padding: 20px;
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.catalogo p {
+    color: black;
+    margin: 10px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.catalogo p.short {
+    text-align: center;
+}
+
+
+/*  - Realiza la funcion del desplegable cuando se activa */
+.modal-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay.active{
+    display: flex;
+}
+
+/* Caja modal */
+.modal{
+    background: #fff;
+    width: 420px;
+    max-width: 90%;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: pop .25s ease;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* Animación entrada */
+@keyframes pop{
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.modal h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-close{
+    position: absolute;
+    top:10px;
+    right:12px;
+    border:none;
+    background:none;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* ESTILOS FOOTER */
+footer {
+    padding-right: 1em;
+    color: black;
+    text-align: right;
+    font-size: 15px;
+}
+
+/* - MEDIA QUERIES - */
+@media screen and (max-width:700px) {
+    
+.boton-menu {
+    display: block;
+}
+
+.menu-principal {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    background-color: #F1ECE6;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.menu-principal.menu-desplegado {
+    display: flex;
+}
+
+.menu-principal a {
+    padding: 10px 12px;
+    font-size: 17px;
+}
+
+.fondo{
+    font-size: 25px;
+    background-attachment: scroll;
+}
+
+}
