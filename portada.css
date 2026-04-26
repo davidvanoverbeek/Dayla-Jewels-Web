@@ -87,7 +87,7 @@ nav ul li a:hover {
 #caja {
     display: flex;
     align-items: center;
-    margin-right: 2em
+    margin-right: 2em;
 }
 
 #foto {
@@ -265,49 +265,145 @@ div #contactos {
 
 @media screen and (max-width:700px) {
     
-.boton-menu {
-    display: block;
-}
+    .boton-menu {
+        display: block;
+    }
 
-.menu-principal {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    background-color: #F1ECE6;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    padding: 15px 20px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        background-color: #F1ECE6;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
 
-.menu-principal.menu-desplegado {
-    display: flex;
-}
+    .menu-principal.menu-desplegado {
+        display: flex;
+    }
 
-.menu-principal a {
-    padding: 10px 12px;
-    font-size: 17px;
-}
+    .menu-principal a {
+        padding: 10px 12px;
+        font-size: 17px;
+    }
 
-.descripcion {
-    font-size: 15px;
-}
+    #caja {
+        margin-right: 0;
+        display: block;
+    }
 
-.banner{
-    font-size: 25px;
-}
+    #foto {
+        display: none;
+    }
 
-.tabla {
-    grid-template-columns: repeat(2, 1fr);
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .banner{
+        font-size: 25px;
+    }
+
+    .tabla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caja-catalogo img {
+        width: 50%;
+        height: 150px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    div #contactos {
+        display: block;
+    }
+
+    #contactos iframe {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #enlaces {
+        margin-left: 0.2em;
+    }
 }
 
 @media screen and (max-width:500px){
+       
+    .boton-menu {
+    display: block;
+    }
+
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        background-color: #F1ECE6;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .menu-principal.menu-desplegado {
+     display: flex;
+    }
+
+    .menu-principal a {
+        padding: 10px 12px;
+        font-size: 17px;
+    }
+
+    #caja {
+        margin-right: 0;
+        display: block;
+    }
+
+    #foto {
+        display: none;
+    }
+
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .banner{
+        font-size: 25px;
+    }
+
     .tabla {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-columns: 1fr;
     }
-}
+
+    .caja-catalogo img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    }
+
+    div #contactos {
+        display: block;
+    }
+
+    #contactos iframe {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #enlaces {
+        margin-left: 0.2em;
+    }
 }

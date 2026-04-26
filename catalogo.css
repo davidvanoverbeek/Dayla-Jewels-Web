@@ -117,14 +117,6 @@ nav ul li a:hover {
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-.productos {
-    padding: 20px;
-    font-size: 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: justify;
-}
-
 .catalogo p {
     color: black;
     margin: 10px 0;
@@ -214,37 +206,36 @@ footer {
 /* - MEDIA QUERIES - */
 @media screen and (max-width:700px) {
     
-.boton-menu {
-    display: block;
-}
+    .boton-menu {
+        display: block;
+    }
 
-.menu-principal {
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    background-color: #F1ECE6;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    padding: 15px 20px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        background-color: #F1ECE6;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
 
-.menu-principal.menu-desplegado {
+    .menu-principal.menu-desplegado {
     display: flex;
-}
+    }
 
-.menu-principal a {
-    padding: 10px 12px;
-    font-size: 17px;
-}
+    .menu-principal a {
+        padding: 10px 12px;
+        font-size: 17px;
+    }
 
-.fondo{
-    font-size: 25px;
-    background-attachment: scroll;
-}
-
+    .fondo{
+        font-size: 25px;
+        background-attachment: scroll;
+    }
 }
