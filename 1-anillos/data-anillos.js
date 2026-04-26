@@ -83,6 +83,20 @@ const DATA = {
       quilataje: ["18K","14K","9K"],
       piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
       color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG2900",
+      img: "img/BAG2900.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG2902",
+      img: "img/BAG2902.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
     }
   ],
 
@@ -170,20 +184,48 @@ const DATA = {
       quilataje: ["18K","14K","9K"],
       piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
       color: ["Amarillo","Blanco"]
-    }
-  ],
-
-  bicolor: [
+    },
     {
-      ref: "BAG",
-      img: "img/BAG.webp",
+      ref: "BAG2638BTO",
+      img: "img/BAG2638BTO.webp",
       quilataje: ["18K","14K","9K"],
       piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
       color: ["Amarillo","Blanco"]
     },
     {
-      ref: "BAG",
-      img: "img/BAG.webp",
+      ref: "BAG2803VAM",
+      img: "img/BAG2803VAM.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    }
+  ],
+
+  bicolor: [
+    {
+      ref: "BAG5024",
+      img: "img/BAG5024.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG5025",
+      img: "img/BAG5025.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG5026",
+      img: "img/BAG5026.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG5027",
+      img: "img/BAG5027.webp",
       quilataje: ["18K","14K","9K"],
       piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
       color: ["Amarillo","Blanco"]
@@ -260,6 +302,20 @@ const DATA = {
     }
   ],
   esmalte: [
+    {
+      ref: "BAG",
+      img: "img/BAG.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
+    {
+      ref: "BAG",
+      img: "img/BAG.webp",
+      quilataje: ["18K","14K","9K"],
+      piedras: ["Rubi","Esmeralda","Zafiro","Aqua"],
+      color: ["Amarillo","Blanco"]
+    },
     {
       ref: "BAG",
       img: "img/BAG.webp",
